@@ -14,10 +14,24 @@ using namespace std;
 #include "RECTANGLEPETERW.h"
 #include "CIRCLEPETERW.h"
 
+void mainMenu(void);
+
 int main() {
 	
+	//displayClassInfoPeterWolzRomberger();
+	//mainMenu();
+	
+	
+	
+	RectanglePeterW *test;
+	initialize(&test);
+	cout << endl << *test;
+	initialize(&test);
+	cout << endl << *test;
+	
+	
 
-
+	return 1;
 }
 
 
@@ -53,9 +67,9 @@ void mainMenu() {
 			break;
 		case 2: cout << "  Circle Tasks --\n";
 			if (initalizeCheck == 0 || initalizeCheck == 1) {
-				initalizeCheck += cirlceMenu(&cir1, &cir2);
+				initalizeCheck += circleMenu(&cir1, &cir2);
 			} else {
-				cirlceMenu(&cir1, &cir2);
+				circleMenu(&cir1, &cir2);
 			}
 			break;
 		case 3: cout << "  Mixed Rectangle & Circle Tasks --\n";
@@ -82,5 +96,6 @@ void mainMenu() {
 */
 
 /* COMMENTS ON Code/Output
-Having some Problems with error LNK2019
+Having some Problems with error LNK2019\
+Had a spelling error that was crashing the program. Pete Wilcox Helped me find it.
 */

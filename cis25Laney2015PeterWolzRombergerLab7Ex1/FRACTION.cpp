@@ -11,21 +11,21 @@ using namespace std;
 
 
 FractionPeterW::FractionPeterW() : num(0), denom(1) {
-	cout << "calling Fraction()\n";
+	//cout << "calling Fraction()\n";
 }
 
 FractionPeterW::FractionPeterW(int n) : num(n), denom(1) {
-	cout << "calling Fraction()\n";
+	//cout << "calling Fraction()\n";
 }
 
 FractionPeterW::FractionPeterW(const FractionPeterW &n) : num(n.num), denom(n.denom) {
 	(*this).reduce();
-	cout << "calling Fraction()\n";
+	//cout << "calling Fraction()\n";
 }
 
 FractionPeterW::FractionPeterW(int n, int d) : num(n), denom(d) {
 	(*this).reduce();
-	cout << "calling Fraction()\n";
+	//cout << "calling Fraction()\n";
 }
 
 void FractionPeterW::print() {
@@ -51,7 +51,7 @@ int FractionPeterW::getNum() const {
 }
 
 FractionPeterW::~FractionPeterW() {
-	cout << "calling ~Fraction()\n"; 
+	//cout << "calling ~Fraction()\n"; 
 }
 
 void FractionPeterW::reduce() {

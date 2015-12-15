@@ -56,8 +56,7 @@ void RectanglePeterW::check(RectanglePeterW&) {
 			else {
 				ll.setX(temp);
 			}
-		}
-		else {
+		} else {
 			cout << "\n    please enter new Y value Numerator: ";
 			cin >> num;
 			cout << "\n    please enter new Y value Denominator: ";
@@ -74,7 +73,7 @@ void RectanglePeterW::check(RectanglePeterW&) {
 
 	if (ur.getX() > ll.getX()) {
 		if (ll.getY() > ur.getY()) {
-			temp = ll.getY();
+			temp = (ll.getY());
 			ll.setY(ur.getY());
 			ur.setY(temp);
 		}

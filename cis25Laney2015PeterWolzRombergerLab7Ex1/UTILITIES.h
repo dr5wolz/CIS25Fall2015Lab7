@@ -18,7 +18,7 @@ using namespace std;
 
 void displayClassInfoPeterWolzRomberger(void);
 int rectangleMenu(RectanglePeterW**, RectanglePeterW**);
-int cirlceMenu(CirclePeterW**, CirclePeterW**);
+int circleMenu(CirclePeterW**, CirclePeterW**);
 void mixedMenu(RectanglePeterW*, RectanglePeterW*, CirclePeterW*, CirclePeterW*);
 void initialize(RectanglePeterW**);
 void initialize(CirclePeterW**);

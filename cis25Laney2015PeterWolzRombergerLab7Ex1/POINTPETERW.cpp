@@ -14,23 +14,23 @@ using namespace std;
 PointPeterW::PointPeterW() {
 	x = FractionPeterW(0, 1);
 	y = FractionPeterW(0, 1);
-	cout << "calling Point()\n";
+	//cout << "calling Point()\n";
 }
 
 PointPeterW::PointPeterW(const FractionPeterW& inX, const FractionPeterW& inY) {
 	x = inX;
 	y = inY;
-	cout << "calling Point()\n";
+	//cout << "calling Point()\n";
 }
 
 PointPeterW::PointPeterW(const PointPeterW& in) {
 	x = in.x;
 	y = in.y;
-	cout << "calling Point()\n";
+	//cout << "calling Point()\n";
 }
 
 PointPeterW::~PointPeterW(){
-	cout << "calling ~Point()\n";
+	//cout << "calling ~Point()\n";
 }
 
 void PointPeterW::setX(const FractionPeterW& in) {

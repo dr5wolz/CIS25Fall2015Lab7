@@ -166,7 +166,7 @@ int rectangleMenu(RectanglePeterW** rec1, RectanglePeterW** rec2) {
 			break;
 		case 4:
 			if (initializeCheck == 1) {
-				cout << "\n      " << rec1 << "\n      " << rec2 << endl;
+				cout << "\n      " << **rec1 << "\n      " << **rec2 << endl;
 			}
 			else {
 				cout << "\n      Please set values of the Rectangles First\n";
@@ -215,8 +215,7 @@ int circleMenu(CirclePeterW** cir1, CirclePeterW** cir2) {
 		case 2:
 			if (initializeCheck == 10) {
 				cout << "\n      Volume of both Circle are 0 as they are 2D shapes\n";
-			}
-			else {
+			} else {
 				cout << "\n      Please set values of the Circles First\n";
 			}
 			break;
@@ -233,16 +232,14 @@ int circleMenu(CirclePeterW** cir1, CirclePeterW** cir2) {
 					cout << "\n      Circle 2 has a greater area of " << cir1Area
 						<< "\n      than Cirlce 1's area of " << cir2Area << endl;
 				}
-			}
-			else {
+			} else {
 				cout << "\n      Please set values of the Circles First\n";
 			}
 			break;
 		case 4:
 			if (initializeCheck == 2) {
 				cout << "\n      " << cir1 << "\n      " << cir2 << endl;
-			}
-			else {
+			} else {
 				cout << "\n      Please set values of the Circles First\n";
 			}
 			break;
@@ -354,11 +351,9 @@ void mixedMenu(RectanglePeterW* rec1, RectanglePeterW* rec2, CirclePeterW* cir1,
 				if (rec2Area > cir2Area) {
 					cout << "\n      Circle 1 has a greater area of " << rec2Area
 						<< "\n      than Circle 2's area of " << cir2Area << endl;
-				}
-				else if (rec2Area == cir2Area) {
+				} else if (rec2Area == cir2Area) {
 					cout << "\n      Both Circles have an area of " << rec2Area;
-				}
-				else {
+				} else {
 					cout << "\n      Circle 2 has a greater area of " << rec2Area
 						<< "\n      than Cirlce 1's area of " << cir2Area << endl;
 				}
@@ -369,11 +364,9 @@ void mixedMenu(RectanglePeterW* rec1, RectanglePeterW* rec2, CirclePeterW* cir1,
 				if (cir1Area > cir2Area) {
 					cout << "\n      Circle 1 has a greater area of " << cir1Area
 						<< "\n      than Circle 2's area of " << cir2Area << endl;
-				}
-				else if (cir1Area == cir2Area) {
+				} else if (cir1Area == cir2Area) {
 					cout << "\n      Both Circles have an area of " << cir1Area;
-				}
-				else {
+				} else {
 					cout << "\n      Circle 2 has a greater area of " << cir1Area
 						<< "\n      than Cirlce 1's area of " << cir2Area << endl;
 				}
